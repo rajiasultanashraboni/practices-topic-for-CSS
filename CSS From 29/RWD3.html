@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: coral;
+            color:white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .nev-menu{
+            background-color: aqua;
+            padding: 1% 5%;
+        }
+        .nev-menu a{
+            color:black;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            font-size: 20px;
+        }
+        .main{
+            background-color:blanchedalmond;
+            padding: 1% 5%;
+        }
+        .aside{
+            background-color: cadetblue;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .footer{
+            background-color: indianred;
+            text-align: center;
+            padding: 30px;
+            font-size: 20px;
+            color: white;
+        }
+        /* <!--For desktop--> */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        [class*="col-"]{
+            float:left;
+            padding: 10px;
+        }
+       .row::after{
+        content: '';
+        clear: both;
+        display: table;
+       }
+       @media screen and (max-width:768px) {
+        [class*="col-"]{
+            width: 100%;}
+            .nev-menu a{
+                text-align: center;
+                background-color: blueviolet;
+                margin: 10px;
+                color: white;
+            }
+        
+       }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Rajia Sultana Shraboni</h1>
+    </div>
+    <div class="row">
+        <div class="nev-menu col-2" >
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="main col-7">
+            <h1>I am a web designer</h1>
+            <p>dolor aliquyam sed eos accusam sadipscing kasd nonumy sit, dolor dolor lorem no stet tempor vero, eirmod est duo dolore et ut sit rebum, est sit clita ut eos. At sit ipsum aliquyam at lorem lorem amet vero. Sea at dolore dolor magna. Gubergren aliquyam kasd rebum sit elitr.
+            </p> 
+            <p>dolor aliquyam sed eos accusam sadipscing kasd nonumy sit, dolor dolor lorem no stet tempor vero, eirmod est duo dolore et ut sit rebum, est sit clita ut eos. At sit ipsum aliquyam at lorem lorem amet vero. Sea at dolore dolor magna. Gubergren aliquyam kasd rebum sit elitr.
+            </p>        
+    </div>
+    <div class="aside col-3" >
+        <h1>what I love?</h1>
+        <p>Ut et stet rebum eirmod sit magna et diam nonumy aliquyam. At magna sed consetetur kasd ut kasd amet sit..
+        </p> 
+        <h2>what I love?</h2>
+            <p>Ut et stet rebum eirmod sit magna et diam nonumy aliquyam. At magna sed consetetur kasd ut kasd amet sit..
+            </p>
+            <h3>what I love?</h3>
+            <p>Ut et stet rebum eirmod sit magna et diam nonumy aliquyam. At magna sed consetetur kasd ut kasd amet sit..
+            </p>
+            <h4>what I love?</h4>
+            <p>Ut et stet rebum eirmod sit magna et diam nonumy aliquyam. At magna sed consetetur kasd ut kasd amet sit..
+            </p>
+    </div>
+    </div>
+        <div class="footer">
+            &copy designed by rajia sultana shraboni
+        </div>
+</body>
+</html>

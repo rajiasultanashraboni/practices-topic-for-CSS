@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox model</title>
+
+    <style>
+        .flex-container{
+            background-color: lightcoral;
+            display: flex;
+            /* flex: wrap;
+            flex-direction: column;
+             */
+             flex-flow: row wrap;
+             justify-content: space-around;
+             /* kono ekta object ke jodi center e nite chai tahole justify content and align items center kore dite hobe */
+             align-items: center;
+             height:300px;
+             
+
+        }
+        .flex-container > div {
+            width: 25px;
+            background-color: blue;
+
+            font-size: 25px;
+            margin: 10px;
+            padding:2%
+          
+           
+            
+
+        }
+
+    </style>
+</head>
+<body>
+   <div class="flex-container">
+
+    <div class="div1" style="order: 2; flex-basis: 150px;">
+        div1
+    </div>
+    <div class="div2" style="order: 1;">
+        div2
+    </div>
+    <div class="div3">
+        div
+    </div>
+    <div class="div4">
+        div
+    </div>
+
+
+
+
+
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index and variables</title>
+    <style>
+        /* <--variable declare korar advantage holo root e poriborton korle change hoye jabe */
+        :root{
+            --primary-color:rgb(0, 255, 85);
+            --secondary-color:orange;
+        }
+        .div1{
+            height: 200px;
+            width: 300px;
+            background-color: black;
+            position: absolute;
+            z-index: 1;
+        }
+        .div2{
+            background:var(--primary-color);
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+
+
+        }
+        /* etar mane holo screen chuto korara sathe sathe jokhon 600px e chole ashbe tokhon root er color change hobe */
+        @media screen and (max-width:600px) {
+            :root{
+            --primary-color:tomato;
+            --secondary-color:brown;
+        }  
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+    <div class="div2">
+
+    </div>
+</body>
+</html>

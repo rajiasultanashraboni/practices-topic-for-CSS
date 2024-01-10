@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width: 300px;
+            height: auto;
+            border: 3px black solid;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 200px;
+            position: relative;
+            animation-name: img-anim;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: linear;
+            /* animation-iteration-count:infinite; */
+            /* animation-name: img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards; */
+
+        }
+        /* img:hover{
+            animation-name: img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        } */
+        @keyframes img-anim {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                left: 0;
+                opacity: 0.5;
+            }
+            100%{
+                top: 0;
+                left: 0; 
+            }
+
+            /* from{
+                max-width: 300px;
+                border: 3px black solid;
+            }
+
+            to{
+                max-width: 400px;
+                border: 3px greenyellow solid;
+            } */
+            /* 0%{
+                max-width: 300px;
+                border: 3px black solid;
+            }
+            100%{
+                border: 3px red solid;
+                max-width: 400px;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/dms/image/D5603AQFOWAdxRcNhEQ/profile-displayphoto-shrink_800_800/0/1691497573944?e=2147483647&v=beta&t=FDYkhX7dyKp7-LvQbiLYmrjaiI2SGxoBAdOGyGQ9uic">
+</body>
+</html>
